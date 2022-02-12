@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rm -rf dist",
-    "build": "esbuild src/app.jsx --bundle --outfile=dist/index.js"
+    "build": "node build.js"
   },
   "author": "Momen Sherif",
   "license": "ISC",
