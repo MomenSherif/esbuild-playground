@@ -22,6 +22,10 @@ esbuild
   .build({
     entryPoints: ['src/A.js'],
     bundle: true,
+    define: {
+      __DEV__: false,
+      'process.env.NODE_ENV': '"production"',
+    },
     outdir: 'dist',
   })
   .catch(() => process.exit(1));
