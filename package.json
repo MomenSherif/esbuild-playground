@@ -1,0 +1,20 @@
+{
+  "name": "esbuild-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf dist",
+    "build": "esbuild src/app.jsx --bundle --outfile=dist/index.js"
+  },
+  "author": "Momen Sherif",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.14.21"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
