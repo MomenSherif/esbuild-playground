@@ -26,6 +26,7 @@ esbuild
       __DEV__: false,
       'process.env.NODE_ENV': '"production"',
     },
+    // external: ['./src/B.js', 'uuid'],
     outdir: 'dist',
   })
   .catch(() => process.exit(1));
